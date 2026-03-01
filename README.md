@@ -76,6 +76,7 @@ kita sudah masuk ketahap melatih model dengan algortima yang kita bituhkan
 2. jalan kan di IDE anda
 3. jalan model training (jika anda ingin melakukan traning model regresion)
 4. untuk menjalan kan di wen interface masih dalam masa pengembangan
+5. atau bisa masuk lewat ip ini :http://127.0.0.1:5000/predict
 
 ## HAL YANG SAYA PELAJARI DALAM MEMBANGUN MDOEL MACHINE LEARNING INI 📚
 
@@ -83,17 +84,18 @@ kita sudah masuk ketahap melatih model dengan algortima yang kita bituhkan
 2. Menangani outliers yanng dominan di dataset
 3. Melakukan handling missing value dan data duplication
 4. Menyelasaikan masalah antara model training dan testing model dengan data baru
-5. Mennetukan algortima yang efektif untuk kondisi data set 
+5. Mennetukan algortima yang efektif untuk kondisi data set
+6. melakukan deploy menggunakan flask
 
 ## PERENCANAAN YANG AKAN SAYA LAKUKAN KEDEPANNYA 📖
 
 1. Saya akan menabahkan labih banyak data set agar akurasi menignkat
 2. Menggunakan hiper parameter tuning
-3. Mendeploy ke web interface
-4. Mengoptimalkan hasil prediksi model 
+4. Mengoptimalkan hasil prediksi model karna model ku saat ini belum bisa memprediksi secara real time
 
 ## TENTANG SAYA 📝
 
 SAYA ADALAH SORANG PELAJAR KELAS 12 DAN INI ADALAH PROJECT MACHINE LEARNING PERTAMA SAYA 
+
 
 
