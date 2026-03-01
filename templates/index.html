@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laptop Price Prediction</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            width: 380px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 11px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #ecf0f1;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Prediksi Harga Laptop</h2>
+
+    <form action="/predict" method="POST">
+
+        <label>brand</label>
+        <input type="text" name="brand" required>
+
+        <label>Processor</label>
+        <input type="text" name="processor_brand" required>
+
+        <label>Processor_name</label>
+        <input type="text" name="processor_name" required>
+
+        <label>ram</label>
+        <input type="number" name="ram_gb" required>
+
+        <label>ram_type</label>
+        <input type="text" name="ram_type" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    {% if predic_model is not none %}
+        <div class="result">
+            Harga Prediksi: {{ predic_model }}
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
